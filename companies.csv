@@ -1,0 +1,94 @@
+name,source,token,industry,country
+Airbnb,greenhouse,airbnb,Travel & Hospitality,United States
+Stripe,greenhouse,stripe,Finance,United States
+Figma,greenhouse,figma,IT,United States
+Discord,greenhouse,discord,IT,United States
+Dropbox,greenhouse,dropbox,IT,United States
+GitLab,greenhouse,gitlab,IT,United States
+Cloudflare,greenhouse,cloudflare,IT,United States
+Databricks,greenhouse,databricks,IT,United States
+Robinhood,greenhouse,robinhood,Finance,United States
+Reddit,greenhouse,reddit,IT,United States
+Pinterest,greenhouse,pinterest,IT,United States
+Lyft,greenhouse,lyft,Transportation,United States
+Instacart,greenhouse,instacart,Retail,United States
+Duolingo,greenhouse,duolingo,Education,United States
+Gusto,greenhouse,gusto,Finance,United States
+Brex,greenhouse,brex,Finance,United States
+Coinbase,greenhouse,coinbase,Finance,United States
+Twilio,greenhouse,twilio,IT,United States
+MongoDB,greenhouse,mongodb,IT,United States
+Okta,greenhouse,okta,IT,United States
+Elastic,greenhouse,elastic,IT,United States
+Postman,greenhouse,postman,IT,India
+PhonePe,greenhouse,phonepe,Finance,India
+Palantir,lever,palantir,IT,United States
+Spotify,lever,spotify,Media,Sweden
+CRED,lever,cred,Finance,India
+Meesho,lever,meesho,Retail,India
+OpenAI,ashby,openai,IT,United States
+Notion,ashby,notion,IT,United States
+Ramp,ashby,ramp,Finance,United States
+Linear,ashby,linear,IT,United States
+Visa,smartrecruiters,Visa,Finance,United States
+Bosch,smartrecruiters,BoschGroup,Manufacturing,Germany
+Freshworks,smartrecruiters,Freshworks,IT,India
+Infosys,auto,https://www.infosys.com/careers/,IT,India
+TCS,auto,https://www.tcs.com/careers,IT,India
+Wipro,auto,https://careers.wipro.com/,IT,India
+HCLTech,auto,https://www.hcltech.com/careers,IT,India
+Tech Mahindra,auto,https://careers.techmahindra.com/,IT,India
+Cognizant,auto,https://careers.cognizant.com/,IT,United States
+LTIMindtree,auto,https://www.ltimindtree.com/careers/,IT,India
+Mphasis,auto,https://careers.mphasis.com/,IT,India
+Capgemini,auto,https://www.capgemini.com/in-en/careers/,IT,France
+Accenture,auto,https://www.accenture.com/in-en/careers,Consulting,Ireland
+IBM,auto,https://www.ibm.com/careers,IT,United States
+Deloitte India,successfactors,https://southasiacareers.deloitte.com/,Consulting,India
+EY,successfactors,https://careers.ey.com/,Consulting,United Kingdom
+KPMG India,auto,https://kpmg.com/in/en/careers.html,Consulting,India
+PwC India,auto,https://www.pwc.in/careers.html,Consulting,India
+McKinsey & Company,auto,https://www.mckinsey.com/careers,Consulting,United States
+BCG,auto,https://careers.bcg.com/,Consulting,United States
+Bain & Company,auto,https://www.bain.com/careers/,Consulting,United States
+Genpact,auto,https://www.genpact.com/careers,Consulting,India
+EXL,auto,https://www.exlservice.com/careers,Consulting,India
+WNS,auto,https://www.wns.com/careers,Consulting,India
+JPMorgan Chase,auto,https://careers.jpmorgan.com/,Finance,United States
+Goldman Sachs,auto,https://higher.gs.com/,Finance,United States
+Morgan Stanley,auto,https://www.morganstanley.com/people-opportunities,Finance,United States
+Citi,auto,https://jobs.citi.com/,Finance,United States
+Bank of America,auto,https://careers.bankofamerica.com/,Finance,United States
+Wells Fargo,auto,https://www.wellsfargojobs.com/,Finance,United States
+HSBC,auto,https://www.hsbc.com/careers,Finance,United Kingdom
+Barclays,auto,https://search.jobs.barclays/,Finance,United Kingdom
+Deutsche Bank,auto,https://careers.db.com/,Finance,Germany
+UBS,auto,https://www.ubs.com/global/en/careers.html,Finance,Switzerland
+BNY,auto,https://www.bny.com/corporate/global/en/careers.html,Finance,United States
+State Street,auto,https://careers.statestreet.com/,Finance,United States
+BlackRock,auto,https://careers.blackrock.com/,Finance,United States
+American Express,auto,https://www.americanexpress.com/en-us/careers/,Finance,United States
+Mastercard,auto,https://careers.mastercard.com/,Finance,United States
+Standard Chartered,auto,https://www.sc.com/en/careers/,Finance,United Kingdom
+HDFC Bank,auto,https://www.hdfcbank.com/personal/about-us/careers,Finance,India
+ICICI Bank,auto,https://www.icicicareers.com/,Finance,India
+Axis Bank,auto,https://www.axisbank.com/careers,Finance,India
+Kotak Mahindra Bank,auto,https://www.kotak.com/en/careers.html,Finance,India
+Google,auto,https://www.google.com/about/careers/applications/jobs/results,IT,United States
+Microsoft,auto,https://jobs.careers.microsoft.com/global/en/search,IT,United States
+Amazon,auto,https://www.amazon.jobs/en/,Retail,United States
+Salesforce,auto,https://careers.salesforce.com/,IT,United States
+Adobe,auto,https://careers.adobe.com/,IT,United States
+NVIDIA,auto,https://www.nvidia.com/en-us/about-nvidia/careers/,IT,United States
+Walmart,auto,https://careers.walmart.com/,Retail,United States
+Intel,auto,https://www.intel.com/content/www/us/en/jobs/jobs-at-intel.html,IT,United States
+Oracle,auto,https://careers.oracle.com/,IT,United States
+SAP,successfactors,https://jobs.sap.com/,IT,Germany
+Unilever,auto,https://careers.unilever.com/,Consumer Goods,United Kingdom
+Procter & Gamble,auto,https://www.pgcareers.com/,Consumer Goods,United States
+PepsiCo,auto,https://www.pepsicojobs.com/,Consumer Goods,United States
+Nestle,auto,https://www.nestle.com/jobs,Consumer Goods,Switzerland
+Reliance Industries,auto,https://careers.ril.com/,Energy,India
+Mahindra Group,auto,https://www.mahindra.com/careers,Manufacturing,India
+Siemens,auto,https://jobs.siemens.com/,Manufacturing,Germany
+Shell,auto,https://www.shell.com/careers.html,Energy,United Kingdom

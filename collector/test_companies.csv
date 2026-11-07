@@ -1,0 +1,13 @@
+name,source,token,industry,country
+Kestrel Capital,greenhouse,kestrel,Finance,India
+Lumora Health,lever,lumora,Healthcare,India
+Orchid Software,ashby,orchid,IT,India
+Nimbus Logistics,smartrecruiters,NimbusLogistics,Logistics,Singapore
+Tarang Mobility,jsonld,https://careers.tarang.example/jobs,Manufacturing,India
+Meridian Bank,workday,https://meridian.wd5.myworkdayjobs.com/en-US/External,Finance,United States
+Halcyon Financial,oracle,https://ehal.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1,Finance,United Kingdom
+Varuna Consulting,successfactors,https://careers.varuna.example,Consulting,India
+Saffron Infotech,auto,https://www.saffron.example/careers,IT,India
+Pinecrest Advisory,auto,https://pinecrest.example/careers,Consulting,India
+Blocked Corp,auto,https://blocked.example/careers,IT,India
+Broken Example Co,greenhouse,doesnotexist,IT,United States

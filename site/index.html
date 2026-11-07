@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OpenRoles — jobs from official company career pages</title>
+<meta name="description" content="Search open jobs collected from companies' official career pages. Apply directly on the company's own website.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2314213a%27/%3E%3Ccircle cx=%2714%27 cy=%2714%27 r=%276.5%27 fill=%27none%27 stroke=%27%23f2b705%27 stroke-width=%273%27/%3E%3Cpath d=%27M19 19l6 6%27 stroke=%27%23f2b705%27 stroke-width=%273%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="band"><div class="wrap">
+  <div class="top">
+    <a class="logo" href="./" data-sitename>Open<span>Roles</span></a>
+    <nav class="tabs">
+      <a href="#" data-view="jobs" aria-current="page">Jobs</a>
+      <a href="#companies" data-view="companies">Companies</a>
+      <a href="#saved" data-view="saved">Saved (<span id="savedN">0</span>)</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+  <h1>Every job from official company career pages, in one search.</h1>
+  <p class="sub">We collect open roles from companies' own career sites and hiring systems. You always apply on the company's website.</p>
+  <form class="search" id="searchForm" role="search">
+    <input id="q" type="search" placeholder="Job title, skill or company (try “FP&A” or “SQL”)" aria-label="Keyword">
+    <input id="loc" type="search" placeholder="City, country or “Remote”" aria-label="Location">
+    <button type="submit">Search jobs</button>
+  </form>
+  <div class="stats"><span><b id="sJobs">–</b> open roles</span><span><b id="sCos">–</b> companies</span><span>Updated <b id="sTime">–</b></span></div>
+</div></header>
+
+<main><div class="wrap">
+  <section id="v-jobs">
+    <div class="grid">
+      <aside aria-label="Filters">
+        <div class="fgroup"><h3>Experience</h3><select id="fExp"><option value="">Any</option><option>Fresher</option><option>0–1</option><option>1–3</option><option>3–5</option><option>5–10</option><option>10+</option></select></div>
+        <div class="fgroup"><h3>Work mode</h3>
+          <label><input type="checkbox" name="mode" value="Remote" id="mRemote">Remote</label>
+          <label><input type="checkbox" name="mode" value="Hybrid" id="mHybrid">Hybrid</label>
+          <label><input type="checkbox" name="mode" value="On-site" id="mOnsite">On-site</label></div>
+        <div class="fgroup"><h3>Posted within</h3><select id="fDate"><option value="99999">Any time</option><option value="1">24 hours</option><option value="3">3 days</option><option value="7">7 days</option><option value="15">15 days</option><option value="30">30 days</option></select></div>
+        <div class="fgroup"><h3>Employment</h3><select id="fEmp"><option value="">Any</option><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Internship</option></select></div>
+        <div class="fgroup"><h3>Job level</h3><select id="fLvl"><option value="">Any</option><option>Entry-level</option><option>Associate</option><option>Mid-level</option><option>Senior</option><option>Management</option></select></div>
+        <div class="fgroup"><h3>Industry</h3><select id="fInd"><option value="">Any</option></select></div>
+        <div class="fgroup"><h3>Country</h3><select id="fCountry"><option value="">Any</option></select></div>
+        <div class="fgroup"><h3>Company</h3><select id="fCo"><option value="">Any</option></select></div>
+        <div class="fgroup"><label><input type="checkbox" id="fSal">Shows salary</label></div>
+        <button class="linkbtn" id="reset" type="button">Clear all filters</button>
+      </aside>
+      <div class="list">
+        <div class="count"><span id="count" aria-live="polite">Loading jobs…</span><label>Sort <select id="sort"><option value="new">Newest</option><option value="co">Company A–Z</option></select></label></div>
+        <div id="results" class="list"></div>
+        <button class="btn more" id="more" type="button" hidden>Show more</button>
+      </div>
+      <article class="detail" id="detail" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="v-companies" hidden>
+    <div class="cobar"><input id="coQ" type="search" placeholder="Search companies" aria-label="Search companies"><select id="coInd" aria-label="Industry"><option value="">All industries</option></select></div>
+    <div class="companies" id="coGrid"></div>
+  </section>
+
+  <section id="v-saved" hidden>
+    <p class="jc">Saved jobs are kept in this browser only. We don't store them anywhere else.</p>
+    <div id="savedList" class="list" style="max-width:760px"></div>
+  </section>
+</div></main>
+<footer class="wrap"><span>Listings belong to the companies that posted them.</span><a href="about.html">About &amp; removal requests</a><a href="privacy.html">Privacy</a></footer>
+<script src="app.js"></script>
+</body>
+</html>

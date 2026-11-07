@@ -1,0 +1,22 @@
+{
+ "boards-api.greenhouse.io/v1/boards/kestrel/": "greenhouse_kestrel.json",
+ "api.lever.co/v0/postings/lumora": "lever_lumora.json",
+ "api.ashbyhq.com/posting-api/job-board/orchid": "ashby_orchid.json",
+ "smartrecruiters.com/v1/companies/NimbusLogistics/postings?limit=100&offset=0": "smartrecruiters_NimbusLogistics_0.json",
+ "careers.tarang.example/jobs/plant-cost-accountant": "jsonld_tarang-mobility_0.html",
+ "careers.tarang.example/jobs/get": "jsonld_tarang-mobility_1.html",
+ "careers.tarang.example/jobs": "jsonld_tarang-mobility.html",
+ "meridian.wd5.myworkdayjobs.com/wday/cxs/meridian/External/jobs#offset=0": "workday_list_0.json",
+ "meridian.wd5.myworkdayjobs.com/wday/cxs/meridian/External/jobs#offset=20": "workday_list_20.json",
+ "meridian.wd5.myworkdayjobs.com/wday/cxs/meridian/External/job/Mumbai/Role_R-1000": "workday_detail.json",
+ "ehal.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions": "oracle.json",
+ "careers.varuna.example/services/rss/job/?locale=en_US&keywords=()": "sf_rss.xml",
+ "www.saffron.example/careers": "auto_saffron.html",
+ "saffron.wd3.myworkdayjobs.com/wday/cxs/saffron/SaffronCareers/jobs#offset=0": "workday_saffron.json",
+ "pinecrest.example/careers": "auto_pinecrest.html",
+ "pinecrest.example/robots.txt": "pinecrest_robots.txt",
+ "pinecrest.example/sitemap_index.xml": "pinecrest_index.xml",
+ "pinecrest.example/jobs-sitemap.xml": "pinecrest_jobs.xml",
+ "pinecrest.example/jobs/fpa-manager-123": "pinecrest_job.html",
+ "blocked.example/robots.txt": "blocked_robots.txt"
+}

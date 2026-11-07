@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About OpenRoles</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%2314213a%27/%3E%3Ccircle cx=%2714%27 cy=%2714%27 r=%276.5%27 fill=%27none%27 stroke=%27%23f2b705%27 stroke-width=%273%27/%3E%3Cpath d=%27M19 19l6 6%27 stroke=%27%23f2b705%27 stroke-width=%273%27 stroke-linecap=%27round%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="band"><div class="wrap"><div class="top"><a class="logo" href="./">Open<span>Roles</span></a>
+<nav class="tabs"><a href="./">Jobs</a><a href="./#companies">Companies</a><a href="about.html" aria-current="page">About</a></nav></div></div></header>
+<main><div class="wrap prose">
+<h2 id="what">What this site does</h2>
+<p>We collect open jobs from companies' official career pages and hiring systems and put them in one search. We don't post jobs ourselves, we don't take applications, and we never charge job seekers. Every "Apply" button takes you to the company's own website.</p>
+
+<h2 id="sources">Where the jobs come from</h2>
+<ul>
+<li><b>Public job-board feeds</b> that companies publish through Greenhouse, Lever, Ashby and SmartRecruiters so their jobs can be shown on other sites.</li>
+<li><b>Structured job data</b> (schema.org JobPosting) on company career pages, only where the site's robots.txt allows automated reading.</li>
+</ul>
+<p>We do not copy listings from other job portals. We show a short summary of each job and link to the full original posting. Listings are refreshed once a day; jobs the company has closed disappear at the next refresh. Experience and job level are estimated from the posting's text, so always check the original.</p>
+<p>Our collector identifies itself as <code>OpenRolesBot</code>, waits between requests, and reads each source at most once a day.</p>
+
+<h2 id="removal">Companies: remove or correct your listings</h2>
+<p>If you'd like your company's jobs removed or corrected, email <b id="mail">us</b> from your company domain. We act on removal requests within 48 hours.</p>
+
+<h2 id="report">Report a problem</h2>
+<p>Seen a job that looks fake, closed or wrong? Email the same address with the link, and we'll check it.</p>
+</div></main>
+<footer class="wrap"><a href="./">Back to jobs</a><a href="privacy.html">Privacy</a></footer>
+<script>try{const e=(window.SITE||{}).contactEmail;if(e)document.getElementById("mail").textContent=e;}catch(e){}</script>
+</body>
+</html>
