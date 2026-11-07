@@ -1,0 +1,52 @@
+# Runs every day: collects fresh jobs from official company feeds and publishes the site on GitHub Pages.
+# Free for public repositories. You can also run it by hand from the Actions tab ("Run workflow").
+name: Update jobs and publish site
+
+on:
+  schedule:
+    - cron: "17 0 * * *"      # every day at 00:17 UTC (05:47 IST)
+  workflow_dispatch:           # adds a "Run workflow" button
+  push:
+    branches: [main]
+    paths: ["site/**", "companies.csv", "collector/**", ".github/workflows/**"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330       # large career sites take a while at one request per second
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Download yesterday's jobs (used if a company's feed is down today)
+        run: curl -fsSL "${{ steps.pages.outputs.base_url }}/data/jobs.json" -o previous_jobs.json || echo "No previous data yet"
+
+      - name: Collect jobs
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python collector/collect.py --previous previous_jobs.json
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
