@@ -24,7 +24,7 @@
 </ul>
 <p>Questions: email <b id="mail">us</b>.</p>
 </div></main>
-<footer class="wrap"><a href="./">Back to jobs</a><a href="about.html">About</a></footer>
-<script>try{const e=(window.SITE||{}).contactEmail;if(e)document.getElementById("mail").textContent=e;}catch(e){}</script>
+<footer class="wrap"><span id="credit"></span><a href="./">Back to jobs</a><a href="about.html">About</a></footer>
+<script>try{const s=window.SITE||{};if(s.contactEmail)document.getElementById("mail").textContent=s.contactEmail;const c=document.getElementById("credit");if(c&&s.builtBy){const esc=t=>t.replace(/[&<>"]/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[x]));c.innerHTML="Built by "+(/^https?:\/\//.test(s.builtByUrl||"")?'<a href="'+esc(s.builtByUrl)+'" target="_blank" rel="noopener">'+esc(s.builtBy)+'</a>':esc(s.builtBy));}}catch(e){}</script>
 </body>
 </html>

@@ -21,6 +21,14 @@
     el.innerHTML = NAME === "OpenRoles" ? "Open<span>Roles</span>" : esc(NAME);
   });
 
+  // credit line in the footer
+  const creditEl = document.getElementById("credit");
+  const by = window.SITE && window.SITE.builtBy;
+  if (creditEl && by) {
+    const url = window.SITE.builtByUrl;
+    creditEl.innerHTML = "Built by " + (/^https?:\/\//.test(url || "") ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(by)}</a>` : esc(by));
+  }
+
   // ------------------------------------------------------------ data
   Promise.all([fetch("data/jobs.json").then((r) => r.json()), fetch("data/companies.json").then((r) => r.json())])
     .then(([j, c]) => {
